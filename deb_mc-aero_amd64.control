@@ -3,6 +3,6 @@ Version: 0.1
 Architecture: amd64
 Maintainer: Marek M. Cel <marekcel@marekcel.pl>
 Depends: libqt5core5a, libqt5gui5, libqt5svg5, libqt5widgets5, libqt5xml5
-Installed-Size: 1554
+Installed-Size: 2403
 Homepage: http://marekcel.pl
 Description: Aerodynamic characteristics (drag coefficient and lift coefficient) approximation tool for the full range of angle of attack, based on NASA TM-102267.
