@@ -134,7 +134,7 @@
 
 int main(int argc, char *argv[])
 {
-    setlocale( LC_ALL, "C" );
+    //setlocale( LC_ALL, "C" );
 
 #   ifdef _LINUX_
     setenv( "LC_NUMERIC", "en_US", 1 );
