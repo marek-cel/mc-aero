@@ -11,10 +11,10 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MScSim-Aero</string>
+   <string>MC-Aero</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="../mscsim-aero.qrc">
+   <iconset resource="../mc-aero.qrc">
     <normaloff>:/gui/images/icon.svg</normaloff>:/gui/images/icon.svg</iconset>
   </property>
   <property name="locale">
@@ -753,7 +753,7 @@
   <tabstop>pushButtonLiftDel</tabstop>
  </tabstops>
  <resources>
-  <include location="../mscsim-aero.qrc"/>
+  <include location="../mc-aero.qrc"/>
  </resources>
  <connections/>
 </ui>
