@@ -2,7 +2,7 @@ Package: mc-aero
 Version: 0.1
 Architecture: amd64
 Maintainer: Marek M. Cel <marekcel@marekcel.pl>
-Depends: libqt5core5a, libqt5gui5, libqt5opengl5, libqt5svg5, libqt5widgets5, libqt5xml5
+Depends: libqt5core5a, libqt5gui5, libqt5svg5, libqt5widgets5, libqt5xml5, libqwt-qt5-6
 Installed-Size: 196
 Homepage: http://marekcel.pl
-Description: Aerodynamic characteristics (drag coefficient and lift coefficient) approximation tool for the full range of angle of attack, based on NASA TM-102267.
+Description: Application for estimating basic aerodynamics characteristics of an aircraft wing.
