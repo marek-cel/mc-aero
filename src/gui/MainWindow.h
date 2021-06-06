@@ -129,6 +129,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 #include <QMainWindow>
+#include <QPen>
 #include <QSettings>
 #include <QShortcut>
 
@@ -182,6 +183,12 @@ private:
 
     QStringList _recentFilesList;           ///< recent files list
     RecentFilesActions _recentFilesActions; ///< recent fiels actions objects
+
+    QPen _penPlotDrag_1;
+    QPen _penPlotDrag_2;
+
+    QPen _penPlotLift_1;
+    QPen _penPlotLift_2;
 
     int _currentDragAngleIndex;             ///<
     int _currentLiftAngleIndex;             ///<

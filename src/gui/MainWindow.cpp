@@ -150,6 +150,11 @@ MainWindow::MainWindow( QWidget *parent ) :
     _scSave   ( NULLPTR ),
     _scExport ( NULLPTR ),
 
+    _penPlotDrag_1 ( QPen( Qt::gray  , 2 ) ),
+    _penPlotDrag_2 ( QPen( Qt::black , 2 ) ),
+    _penPlotLift_1 ( QPen( Qt::gray  , 2 ) ),
+    _penPlotLift_2 ( QPen( Qt::black , 2 ) ),
+
     _currentDragAngleIndex ( -1 ),
     _currentLiftAngleIndex ( -1 ),
 
@@ -513,7 +518,7 @@ void MainWindow::updatePlotDrag()
         QwtPlotCurve *curve = new QwtPlotCurve( "" );
 
         curve->setSamples( vx1, vy1 );
-        curve->setPen( QPen( Qt::gray, 2 ) );
+        curve->setPen( _penPlotDrag_1 );
 
         curve->attach( _ui->plotDrag );
     }
@@ -535,7 +540,7 @@ void MainWindow::updatePlotDrag()
         QwtPlotCurve *curve = new QwtPlotCurve( "" );
 
         curve->setSamples( vx2, vy2 );
-        curve->setPen( QPen( Qt::black, 2 ) );
+        curve->setPen( _penPlotDrag_2 );
 
         curve->attach( _ui->plotDrag );
     }
@@ -617,7 +622,7 @@ void MainWindow::updatePlotLift()
         QwtPlotCurve *curve = new QwtPlotCurve( "" );
 
         curve->setSamples( vx1, vy1 );
-        curve->setPen( QPen( Qt::gray, 2 ) );
+        curve->setPen( _penPlotLift_1 );
 
         curve->attach( _ui->plotLift );
     }
@@ -639,7 +644,7 @@ void MainWindow::updatePlotLift()
         QwtPlotCurve *curve = new QwtPlotCurve( "" );
 
         curve->setSamples( vx2, vy2 );
-        curve->setPen( QPen( Qt::black, 2 ) );
+        curve->setPen( _penPlotLift_2 );
 
         curve->attach( _ui->plotLift );
     }
