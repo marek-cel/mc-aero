@@ -464,13 +464,13 @@ void MainWindow::updateGUI()
 
     for ( std::vector< double >::iterator it = ad.begin(); it != ad.end(); it++ )
     {
-        QString ang = QString::number( *it, 'f', 1 );
+        QString ang = locale().toString( *it, 'f', 1 );
         _ui->listDragAngles->addItem( new QListWidgetItem( ang, _ui->listDragAngles ) );
     }
 
     for ( std::vector< double >::iterator it = al.begin(); it != al.end(); it++ )
     {
-        QString ang = QString::number( *it, 'f', 1 );
+        QString ang = locale().toString( *it, 'f', 1 );
         _ui->listLiftAngles->addItem( new QListWidgetItem( ang, _ui->listLiftAngles ) );
     }
 

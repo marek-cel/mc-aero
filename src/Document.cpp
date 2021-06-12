@@ -127,6 +127,7 @@
 #include <Document.h>
 
 #include <cmath>
+#include <iomanip>
 #include <iostream>
 #include <sstream>
 
@@ -620,10 +621,14 @@ void Document::setDragAnglesList( const std::vector< double > &list )
     {
         if ( i > 0 ) _drag_angles += ",";
 
-        char temp[10];
-        sprintf( temp, "%.1f", _drag_angles_list[ i ] );
+        std::stringstream ss;
 
-        _drag_angles += temp;
+        ss.setf( std::ios_base::showpoint );
+        ss.setf( std::ios_base::fixed );
+
+        ss << std::setprecision( 1 ) << _drag_angles_list[ i ];
+
+        _drag_angles += ss.str();
     }
 }
 
@@ -640,10 +645,14 @@ void Document::setLiftAnglesList( const std::vector< double > &list )
     {
         if ( i > 0 ) _lift_angles += ",";
 
-        char temp[10];
-        sprintf( temp, "%.1f", _lift_angles_list[ i ] );
+        std::stringstream ss;
 
-        _lift_angles += temp;
+        ss.setf( std::ios_base::showpoint );
+        ss.setf( std::ios_base::fixed );
+
+        ss << std::setprecision( 1 ) << _lift_angles_list[ i ];
+
+        _lift_angles += ss.str();
     }
 }
 
@@ -653,33 +662,24 @@ void Document::readAnglesList( const char *angles, std::vector< double > *angles
 {
     angles_list->clear();
 
-    unsigned int offset = 0;
-    unsigned int result = 0;
+    std::stringstream ss( angles );
 
-    do
+    ss.setf( std::ios_base::showpoint );
+    ss.setf( std::ios_base::fixed );
+
+    double value;
+    char separator;
+
+    while ( !ss.eof() )
     {
-        double temp = 0.0;
+        if ( ss.peek() == ',' ) ss >> separator;
 
-        unsigned int ch_read = 0;
-
-        if ( offset > 0 )
+        if ( std::ios_base::eofbit != ss.peek() )
         {
-            result = sscanf( angles + offset, ",%lf%n", &temp, &ch_read );
-        }
-        else
-        {
-            result = sscanf( angles + offset,  "%lf%n", &temp, &ch_read );
-        }
-
-        offset += ch_read;
-
-        if ( result == 1 )
-        {
-            //std::cout << temp << std::endl;
-            angles_list->push_back( temp );
+            ss >> value;
+            angles_list->push_back( value );
         }
     }
-    while ( result == 1 );
 }
 
 ////////////////////////////////////////////////////////////////////////////////
