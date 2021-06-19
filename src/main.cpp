@@ -150,11 +150,8 @@ int main(int argc, char *argv[])
     
     int result = app->exec();
 
-    if ( win ) delete win;
-    win = 0;
-
-    if ( app ) delete app;
-    app = 0;
+    if ( win ) { delete win; } win = nullptr;
+    if ( app ) { delete app; } app = nullptr;
 
     return result;
 }
