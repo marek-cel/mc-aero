@@ -21,6 +21,6 @@ rem call "%QTDIR%\bin\windeployqt.exe" --release mscsim.exe
 rem cd ..\..
 call "%QTDIR%\bin\windeployqt.exe" --release mc-aero\bin\mc-aero.exe
 
-"C:\Program Files\7-Zip\7z.exe" a mc-aero_0.1_win64.zip -r mc-aero\
+"C:\Program Files\7-Zip\7z.exe" a mc-aero_0.2_win64.zip -r mc-aero\
 
 pause

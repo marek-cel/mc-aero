@@ -147,9 +147,9 @@ class DialogAddAngle : public QDialog
 
 public:
 
-    DialogAddAngle( QWidget *parent = NULLPTR );
+    explicit DialogAddAngle( QWidget *parent = NULLPTR );
 
-    ~DialogAddAngle();
+    virtual ~DialogAddAngle();
 
     double getAngle() const;
 

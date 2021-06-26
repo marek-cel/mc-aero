@@ -126,6 +126,8 @@
 
 #include <QApplication>
 
+#include <clocale>
+
 #include <defs.h>
 
 #include <gui/MainWindow.h>

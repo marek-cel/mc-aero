@@ -38,7 +38,7 @@
            <item row="2" column="2">
             <widget class="QLabel" name="labelCD_1">
              <property name="text">
-              <string>CD_1</string>
+              <string>CD_1 [-]:</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -61,7 +61,7 @@
            <item row="2" column="0">
             <widget class="QLabel" name="labelAD_1">
              <property name="text">
-              <string>AD_1</string>
+              <string>AD_1 [deg]:</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -74,7 +74,7 @@
            <item row="5" column="0">
             <widget class="QLabel" name="labelAD_4">
              <property name="text">
-              <string>AD_4</string>
+              <string>AD_4 [deg]:</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -133,7 +133,7 @@
            <item row="4" column="2">
             <widget class="QLabel" name="labelCD_3">
              <property name="text">
-              <string>CD_3</string>
+              <string>CD_3 [-]:</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -146,7 +146,7 @@
            <item row="4" column="0">
             <widget class="QLabel" name="labelAD_3">
              <property name="text">
-              <string>AD_3</string>
+              <string>AD_3 [deg]:</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -159,7 +159,7 @@
            <item row="3" column="0">
             <widget class="QLabel" name="labelAD_2">
              <property name="text">
-              <string>AD_2</string>
+              <string>AD_2 [deg]:</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -214,7 +214,7 @@
            <item row="5" column="2">
             <widget class="QLabel" name="labelCD_4">
              <property name="text">
-              <string>CD_4</string>
+              <string>CD_4 [-]:</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -227,7 +227,7 @@
            <item row="3" column="2">
             <widget class="QLabel" name="labelCD_2">
              <property name="text">
-              <string>CD_2</string>
+              <string>CD_2 [-]:</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -250,7 +250,7 @@
            <item row="1" column="2">
             <widget class="QLabel" name="labelCD_0">
              <property name="text">
-              <string>CD_0</string>
+              <string>CD_0 [-]:</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -276,7 +276,7 @@
            <item row="6" column="2">
             <widget class="QLabel" name="labelCD_5">
              <property name="text">
-              <string>CD_5</string>
+              <string>CD_5 [-]:</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -342,7 +342,7 @@
            <item row="1" column="0">
             <widget class="QLabel" name="labelAD_0">
              <property name="text">
-              <string>AD_0</string>
+              <string>AD_0 [deg]:</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -352,7 +352,7 @@
            <item row="6" column="0">
             <widget class="QLabel" name="labelAD_5">
              <property name="text">
-              <string>AD_5</string>
+              <string>AD_5 [deg]:</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -385,7 +385,7 @@
               <bool>false</bool>
              </property>
              <property name="text">
-              <string>CL_0</string>
+              <string>CL_0 [-]:</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -424,7 +424,7 @@
            <item row="2" column="0">
             <widget class="QLabel" name="labelAL_S">
              <property name="text">
-              <string>AL_S</string>
+              <string>AL_S [deg]:</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -437,7 +437,7 @@
            <item row="3" column="0">
             <widget class="QLabel" name="labelAL_1">
              <property name="text">
-              <string>AL_1</string>
+              <string>AL_1 [deg]:</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -463,7 +463,7 @@
            <item row="4" column="2">
             <widget class="QLabel" name="labelCL_2">
              <property name="text">
-              <string>CL_2</string>
+              <string>CL_2 [-]:</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -476,7 +476,7 @@
            <item row="3" column="2">
             <widget class="QLabel" name="labelCL_1">
              <property name="text">
-              <string>CL_1</string>
+              <string>CL_1 [-]:</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -544,7 +544,7 @@
            <item row="2" column="2">
             <widget class="QLabel" name="labelCL_S">
              <property name="text">
-              <string>CL_S</string>
+              <string>CL_S [-]:</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -557,7 +557,7 @@
            <item row="4" column="0">
             <widget class="QLabel" name="labelAL_2">
              <property name="text">
-              <string>AL_2</string>
+              <string>AL_2 [deg]:</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>

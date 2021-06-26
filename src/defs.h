@@ -129,7 +129,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 #define APP_NAME   "mc-aero"
-#define APP_VER    "0.1"
+#define APP_VER    "0.2"
 #define ORG_NAME   "Marek_Cel"
 #define ORG_DOMAIN "marekcel.pl"
 
