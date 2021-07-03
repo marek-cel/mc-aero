@@ -462,13 +462,13 @@ void MainWindow::updateGUI()
     std::vector< double > ad = _doc.getDragAnglesList();
     std::vector< double > al = _doc.getLiftAnglesList();
 
-    for ( std::vector< double >::iterator it = ad.begin(); it != ad.end(); it++ )
+    for ( std::vector< double >::iterator it = ad.begin(); it != ad.end(); ++it )
     {
         QString ang = locale().toString( *it, 'f', 1 );
         _ui->listDragAngles->addItem( new QListWidgetItem( ang, _ui->listDragAngles ) );
     }
 
-    for ( std::vector< double >::iterator it = al.begin(); it != al.end(); it++ )
+    for ( std::vector< double >::iterator it = al.begin(); it != al.end(); ++it )
     {
         QString ang = locale().toString( *it, 'f', 1 );
         _ui->listLiftAngles->addItem( new QListWidgetItem( ang, _ui->listLiftAngles ) );
@@ -501,7 +501,7 @@ void MainWindow::updatePlotDrag()
     QVector< double > vx1;
     QVector< double > vy1;
 
-    for ( std::vector< double >::iterator it = ad.begin(); it != ad.end(); it++ )
+    for ( std::vector< double >::iterator it = ad.begin(); it != ad.end(); ++it )
     {
         double x = (*it);
         double y = _doc.getCoefDrag( x );
@@ -605,7 +605,7 @@ void MainWindow::updatePlotLift()
     QVector< double > vx1;
     QVector< double > vy1;
 
-    for ( std::vector< double >::iterator it = al.begin(); it != al.end(); it++ )
+    for ( std::vector< double >::iterator it = al.begin(); it != al.end(); ++it )
     {
         double x = (*it);
         double y = _doc.getCoefLift( x );
@@ -872,7 +872,7 @@ void MainWindow::on_pushButtonDragAdd_clicked()
 
         bool inserted = false;
 
-        for ( std::vector< double >::iterator it = list.begin(); it != list.end(); it++ )
+        for ( std::vector< double >::iterator it = list.begin(); it != list.end(); ++it )
         {
             if ( angle < *it )
             {
@@ -908,7 +908,7 @@ void MainWindow::on_pushButtonLiftAdd_clicked()
 
         bool inserted = false;
 
-        for ( std::vector< double >::iterator it = list.begin(); it != list.end(); it++ )
+        for ( std::vector< double >::iterator it = list.begin(); it != list.end(); ++it )
         {
             if ( angle < *it )
             {

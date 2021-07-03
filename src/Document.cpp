@@ -215,7 +215,7 @@ bool Document::exportAs( const char *fileName )
         std::string sapcer = "";
 
         fprintf( file, "drag coef:\n" );
-        for ( std::vector< double >::iterator it = _drag_angles_list.begin(); it != _drag_angles_list.end(); it++ )
+        for ( std::vector< double >::iterator it = _drag_angles_list.begin(); it != _drag_angles_list.end(); ++it )
         {
             indent = "       ";
             sapcer = "    ";
@@ -232,7 +232,7 @@ bool Document::exportAs( const char *fileName )
         fprintf( file, "\n" );
 
         fprintf( file, "lift coef:\n" );
-        for ( std::vector< double >::iterator it = _lift_angles_list.begin(); it != _lift_angles_list.end(); it++ )
+        for ( std::vector< double >::iterator it = _lift_angles_list.begin(); it != _lift_angles_list.end(); ++it )
         {
             indent = "       ";
             sapcer = "   ";
