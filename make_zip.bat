@@ -13,7 +13,6 @@ mkdir mc-aero\bin
 mkdir mc-aero\data
 copy /y bin\*.exe mc-aero\bin
 xcopy data mc-aero\data /E
-copy "%QTDIR%\bin\Qt5OpenGL.dll" mc-aero\bin
 copy "%QWT_ROOT%\lib\qwt.dll" mc-aero\bin
 
 rem cd qt\bin
